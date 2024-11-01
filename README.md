@@ -18,16 +18,22 @@ This guide will walk you through downloading MongoDB, setting up `mongosh`, and 
 3. **Unzip `mongosh`**  
    - Unzip the downloaded `mongosh` ZIP file.
    - Move the extracted contents into the MongoDB installation directory.
+  
+4. **Add `mongosh` filepath to system environment** 
+   - Unzip the downloaded `mongosh` ZIP file.
+   - Move the extracted contents into the MongoDB installation directory.
 
-4. **Run MongoDB Shell (mongosh)**  
+5. **Run MongoDB Shell (mongosh)**  
    Open Command Prompt and navigate to the MongoDB installation directory, then start `mongosh` by typing:
    ```bash
    mongosh
-use user_database
-db.createCollection("users")
-db.users.insertOne({
-    "username": "testuser",
-    "password": "hashed_pw_test"
-})
+   
+   use user_database
+   
+   db.createCollection("users")
+   db.users.insertOne({
+       "username": "testuser",
+       "password": "hashed_pw_test"
+   })
 
    
