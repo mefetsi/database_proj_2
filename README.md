@@ -26,17 +26,12 @@ This guide will walk you through downloading MongoDB, setting up `mongosh`, and 
 5. **Repeat steps 2-4 for MongoDB Tools [here] (https://www.mongodb.com/try/download/database-tools)**  
    Open Command Prompt and navigate to the MongoDB installation directory, then start `mongosh` by typing:
 
-6. **Run MongoDB Shell (mongosh)**  
-   Open Command Prompt and navigate to the MongoDB installation directory, then start `mongosh` by typing:
+6. **Download databse files and run in CMD**  
+   Open Command Prompt:
    ```bash
-   mongosh
-   
-   use user_database
-   
-   db.createCollection("users")
-   db.users.insertOne({
-       "username": "testuser",
-       "password": "hashed_pw_test"
-   })
+     mongorestore --uri "mongodb://localhost:27017" --db games_database /path/to/backup/games_database
+     mongorestore --uri "mongodb://localhost:27017" --db user_database /path/to/backup/user_database
+
+
 
    
