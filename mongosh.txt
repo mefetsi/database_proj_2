@@ -1,0 +1,18 @@
+ran these commands
+
+use user_database
+db.createCollection("users")
+db.createCollection("personal_games")
+
+use games_database
+db.createCollection("games")
+
+
+
+
+
+for you to import the database in mongosh
+change your path names 
+
+mongorestore --uri "mongodb://localhost:27017" --db games_database "C:\path\to\database_proj_2\games_database"
+mongorestore --uri "mongodb://localhost:27017" --db user_database "C:\path\to\database_proj_2\user_database"
