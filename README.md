@@ -33,5 +33,6 @@ This guide will walk you through downloading MongoDB, setting up `mongosh`, and 
      mongorestore --uri "mongodb://localhost:27017" --db user_database /path/to/backup/user_database
 
 
+to run do streamlit run main.py in CMD
 
    
